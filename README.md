@@ -1,2 +1,2 @@
 # demo
-This sis the paymnet sdk demo page
+This is the paymnet sdk demo page
