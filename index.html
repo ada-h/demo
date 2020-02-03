@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./invoice.css">
+
+</head>
+<body>
+    <h1>Hello </h1>
+    <button style="padding: 20px;"  onclick = "buttonClick()" >Pay!</button>
+     <script src="https://cdn.jsdelivr.net/gh/ada-h/xendSdk/payxend.js"></script>
+    <script>
+        function buttonClick(){
+           
+            Payment.setup(
+                {
+
+                    paymentPurpose: 'Invoice',
+                    invoiceNum: '8B5E578F-B779-4D8',
+                    amount: 200,
+                    customerName: '',
+                    customerEmail: '',
+                    customerNumber: '0901212121',
+                    customerXendCode: '',
+                    receiverXendCode: 'A000000',
+                    receiverName: 'XendTest',
+                    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQaCGZe0yfc6i2YAfILr5ZbzoNT75vuHemLEdkRXTwApp29TJ45'
+                }
+            )
+        }
+        
+    </script>
+    
+</body>
+</html>
